@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+    django:
+        build: ./django
+        ports:
+            - 80:8000
+        volumes:
+            - .:/app
+        stdin_open: true
+        tty: true
+        command: bash
+
+
